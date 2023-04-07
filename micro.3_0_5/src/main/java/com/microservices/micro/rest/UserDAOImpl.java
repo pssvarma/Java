@@ -5,18 +5,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
 
 
 
+
+
+@Component
 public class UserDAOImpl implements UserDAO<User> {
 
 	ArrayList<User> list = new ArrayList<User>();
 
 	@Override
-	public User get(Long id) {
+	public Optional<User> get(Long id) {
 	
 		//return list.stream().filter(u->u.getId().equals(id)).findFirst();
-		User user=list.stream().filter(u->u.getId()==id).findFirst().get();
+		Optional<User> user=list.stream().filter(u->u.getId()==id).findFirst();
 		
 		 return user;
 	}

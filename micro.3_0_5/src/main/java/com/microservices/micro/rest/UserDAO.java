@@ -3,9 +3,11 @@ package com.microservices.micro.rest;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
+@Component
 public interface UserDAO<T> {
 
-	T get(Long id);
+	Optional<T> get(Long id);
 
 	List<T> getAll();
 
