@@ -35,7 +35,7 @@ public class UserDAOImpl implements UserDAO<User> {
 	@Override
 	public User save(User t) {
 		list.add(t);
-		// TODO Auto-generated method stub
+	
 		return t;
 	}
 
@@ -51,7 +51,7 @@ public class UserDAOImpl implements UserDAO<User> {
 			return t;
 		}
 		
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
@@ -62,7 +62,6 @@ public class UserDAOImpl implements UserDAO<User> {
 	
 	@Override
 	public boolean delete(User t) {
-		// TODO Auto-generated method stub
 		
     return list.remove(t);
 	}

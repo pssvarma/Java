@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableDiscoveryClient
 @ComponentScan(basePackages = "com.microservices.micro.rest")
-@RequestMapping("/Users",)
+@RequestMapping("/Users")
 public class Users {
 
 	@Autowired
@@ -53,7 +53,7 @@ public class Users {
 	@PostMapping()
 	public ResponseEntity<Void> addUser(@RequestBody User user) {
 		User saveduser = userDAO.save(user);
-		return ResponseEntity.created(URI.create("/users/" + user.getId())).build();
+		return ResponseEntity.created(URI.create("/users/" + saveduser.getId())).build();
 	}
 
 	public void getUserCount() {
