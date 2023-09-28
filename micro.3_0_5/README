@@ -2,7 +2,7 @@ SWAGGER/OpenUI URL  :
 
 http://localhost:8100/swagger-ui/index.html
 
-maven :
+maven command to run :
 
 
 mvn clean  compile package
