@@ -10,3 +10,7 @@ mvn clean  compile package
 Command to test application locally  :
 
 mvn spring-boot:run
+
+Building docker image :
+
+docker build -t spring-boot-app .
