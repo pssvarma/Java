@@ -1,6 +1,4 @@
-# Header 1 - Level 1
-
-Steps to access or test application 
+# Steps to access or test application 
 
 # Header 1 - Level 2
 
