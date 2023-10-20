@@ -16,5 +16,5 @@
 
  ## 4 command to Building docker image :
 
-    docker build -t spring-boot-app .
+ ###   docker build -t spring-boot-app .
 
