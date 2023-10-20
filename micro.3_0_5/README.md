@@ -1,16 +1,22 @@
-SWAGGER/OpenUI URL  : 
+# Header 1 - Level 1
 
-http://localhost:8100/swagger-ui/index.html
+Steps to access or test application 
 
-maven command to run :
+# Header 1 - Level 2
 
+ 1 SWAGGER/OpenUI URL  : 
 
-mvn clean  compile package
+    http://localhost:8100/swagger-ui/index.html
 
-Command to test application locally  :
+ 2 maven command to  build jar file :
 
-mvn spring-boot:run
+    mvn clean  compile package
 
-Building docker image :
+ 3 Command to test application locally  :
 
-docker build -t spring-boot-app .
+    mvn spring-boot:run
+
+ 4 command to Building docker image :
+
+   docker build -t spring-boot-app .
+
